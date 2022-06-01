@@ -27,6 +27,16 @@ vim.cmd([[
 vim.cmd([[
     set clipboard+=unnamedplus
     set expandtab
+    autocmd FileType haskell setlocal shiftwidth=2 tabstop=2
+    autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+    autocmd FileType html setlocal shiftwidth=2 tabstop=2
+    autocmd FileType css setlocal shiftwidth=2 tabstop=2
+    autocmd FileType asm setlocal noexpandtab shiftwidth=8 tabstop=8
+
+
+    nnoremap <C-H> :Hexmode<CR>
+    inoremap <C-H> <Esc>:Hexmode<CR>
+    vnoremap <C-H> :<C-U>Hexmode<CR>
 ]])
 
 
@@ -34,3 +44,8 @@ vim.cmd([[
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.hls.setup{}
 require'lspconfig'.clangd.setup{}
+require'lspconfig'.ocamllsp.setup{}
+require'lspconfig'.pyright.setup{}
+require'lspconfig'.tsserver.setup{}
+
+require('lspconf')
