@@ -18,4 +18,11 @@ return require('packer').startup(function()
 	use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
 
     use 'nvim-lua/completion-nvim'
+
+    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'MunifTanjim/prettier.nvim'
+
+    use 'airblade/vim-gitgutter'
+
+    use 'github/copilot.vim'
 end)
