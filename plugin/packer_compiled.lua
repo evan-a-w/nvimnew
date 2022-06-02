@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "/home/evan/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
+  },
   ["vim-gitgutter"] = {
     loaded = true,
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/vim-gitgutter",

@@ -25,4 +25,6 @@ return require('packer').startup(function()
     use 'airblade/vim-gitgutter'
 
     use 'github/copilot.vim'
+
+    use 'SirVer/ultisnips'
 end)
