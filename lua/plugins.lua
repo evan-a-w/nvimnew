@@ -3,19 +3,19 @@ return require('packer').startup(function()
 
     use "EdenEast/nightfox.nvim"
 
-	use 'nvim-lua/plenary.nvim'
+    use 'nvim-lua/plenary.nvim'
 
-	use {
+    use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
 
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
 
-	use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+    use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
 
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'MunifTanjim/prettier.nvim'
@@ -26,4 +26,6 @@ return require('packer').startup(function()
 
     use 'simrat39/rust-tools.nvim'
     use 'hrsh7th/nvim-cmp'
+
+    use 'SirVer/ultisnips'
 end)
