@@ -28,4 +28,6 @@ return require('packer').startup(function()
     use 'hrsh7th/nvim-cmp'
 
     use 'SirVer/ultisnips'
+
+    use 'vim-syntastic/syntastic'
 end)
