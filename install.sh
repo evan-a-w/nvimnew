@@ -12,3 +12,12 @@ sudo apt install fd-find
 
 cd ~/dev
 git clone https://github.com/tree-sitter/tree-sitter && cd tree-sitter && make && sudo make install && cd ..
+
+# https://github.com/belluzj/fantasque-sans#installation
+cd `mktemp -d`
+curl -LO https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-Normal.tar.gz
+tar -xzvf FantasqueSansMono-Normal.tar.gz
+cd OTF
+mkdir -p ~/.local/share/fonts
+mv Fantasque* ~/.local/share/fonts
+fc-cache -f -v

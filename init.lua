@@ -17,6 +17,7 @@ set.shiftwidth = 4
 set.expandtab = true
 set.smartindent = true
 set.smarttab = true
+set.number = true
 
 vim.g.mapleader = ','
 
