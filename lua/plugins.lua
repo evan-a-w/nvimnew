@@ -30,4 +30,6 @@ return require('packer').startup(function()
     use 'SirVer/ultisnips'
 
     use 'vim-syntastic/syntastic'
+
+    use {'ZhiyuanLck/smart-pairs', event = 'InsertEnter', config = function() require('pairs'):setup() end}
 end)

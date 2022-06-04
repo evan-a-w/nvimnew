@@ -41,19 +41,6 @@ vim.cmd([[
     inoremap <C-H> <Esc>:Hexmode<CR>
     vnoremap <C-H> :<C-U>Hexmode<CR>
 
-    inoremap { {}<Esc>ha
-    inoremap ( ()<Esc>ha
-    inoremap [ []<Esc>ha
-    inoremap " ""<Esc>ha
-    inoremap ' ''<Esc>ha
-    inoremap ` ``<Esc>ha
-
-    ino {<CR> {<CR>}<ESC>O
-    ino (<CR> (<CR>)<Esc>O
-    ino [<CR> [<CR>]<Esc>O
-    ino "<CR> "<CR>"<Esc>O
-    ino '<CR> '<CR>'<Esc>O
-    ino `<CR> `<CR>`<Esc>O
 
     " " Copy to clipboard
     vnoremap  <leader>y  "+y
