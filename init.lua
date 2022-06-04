@@ -69,6 +69,7 @@ require('lspconf')
 -- Lang specific stuff
 vim.cmd([[
     autocmd FileType haskell setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
     autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
     autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
     autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
