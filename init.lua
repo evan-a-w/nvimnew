@@ -18,6 +18,7 @@ set.expandtab = true
 set.smartindent = true
 set.smarttab = true
 set.number = true
+set.cmdheight = 3
 
 vim.g.mapleader = ','
 
@@ -53,6 +54,8 @@ vim.cmd([[
     nnoremap <leader>P "+P
     vnoremap <leader>p "+p
     vnoremap <leader>P "+P
+
+    nnoremap <C-e> <cmd>lua vim.diagnostic.open_float()<CR>
 ]])
 
 
