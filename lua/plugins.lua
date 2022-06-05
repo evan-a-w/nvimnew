@@ -25,11 +25,12 @@ return require('packer').startup(function()
     use 'github/copilot.vim'
 
     use 'simrat39/rust-tools.nvim'
-    use 'hrsh7th/nvim-cmp'
 
     use 'SirVer/ultisnips'
 
     use 'vim-syntastic/syntastic'
 
     use {'ZhiyuanLck/smart-pairs', event = 'InsertEnter', config = function() require('pairs'):setup() end}
+
+    use 'ms-jpq/coq-nvim'
 end)

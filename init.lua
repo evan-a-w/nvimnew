@@ -85,4 +85,6 @@ vim.cmd([[
     autocmd Filetype ocaml map <g-d> :MerlinLocate<CR>
     autocmd Filetype ocaml map <c-d> :MerlinDestruct<CR>
     autocmd Filetype ocaml map <c-c> :MerlinConstruct<CR>
+
+    let g:coq_settings = { 'auto_start': v:true }
 ]])
