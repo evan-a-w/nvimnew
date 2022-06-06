@@ -21,3 +21,12 @@ cd OTF
 mkdir -p ~/.local/share/fonts
 mv Fantasque* ~/.local/share/fonts
 fc-cache -f -v
+
+
+git clone --depth=1 --recursive https://github.com/MaskRay/ccls
+cd ccls
+
+cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_PREFIX_PATH=/usr/lib/llvm-10 \
+    -DLLVM_INCLUDE_DIR=/usr/lib/llvm-10/include \
+    -DLLVM_BUILD_INCLUDE_DIR=/usr/include/llvm-10/

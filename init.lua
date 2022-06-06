@@ -59,14 +59,6 @@ vim.cmd([[
 ]])
 
 
--- Language servers
-require'lspconfig'.rust_analyzer.setup{}
-require'lspconfig'.hls.setup{}
-require'lspconfig'.clangd.setup{}
-require'lspconfig'.ocamllsp.setup{}
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.tsserver.setup{}
-
 require('lspconf')
 
 -- Lang specific stuff
@@ -90,4 +82,12 @@ vim.cmd([[
     autocmd Filetype ocaml map <c-c> :MerlinConstruct<CR>
 
     let g:coq_settings = { 'auto_start': v:true }
+
+    nnoremap <leader>h :wincmd h<CR>
+    nnoremap <leader>j :wincmd j<CR>
+    nnoremap <leader>k :wincmd k<CR>
+    nnoremap <leader>l :wincmd l<CR>
+
+    nnoremap <leader>v :vsplit<CR>
+    nnoremap <leader>h :split<CR>
 ]])
