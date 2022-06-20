@@ -33,4 +33,6 @@ return require('packer').startup(function()
     use {'ZhiyuanLck/smart-pairs', event = 'InsertEnter', config = function() require('pairs'):setup() end}
 
     use 'ms-jpq/coq-nvim'
+
+    use 'christoomey/vim-tmux-navigator'
 end)
