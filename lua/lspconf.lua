@@ -1,3 +1,6 @@
+local lspconf = require "lspconfig"
+local coq = require "coq"
+--
 -- nvim-lspconfig things
 local opts = { noremap=true, silent=true }
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
@@ -35,11 +38,11 @@ end
 -- map buffer local keybindings when the language server attaches
 local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'hls', 'clangd', 'ocamllsp' }
 for _, lsp in pairs(servers) do
-  require('lspconfig')[lsp].setup {
+  lspconf[lsp].setup(coq.lsp_ensure_capabilities({
     on_attach = on_attach,
     flags = {
       -- This will be the default in neovim 0.7+
       debounce_text_changes = 150,
     }
-  }
+  }))
 end
