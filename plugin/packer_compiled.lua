@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/evan/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/evan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",

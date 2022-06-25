@@ -1,6 +1,8 @@
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
+    use 'williamboman/nvim-lsp-installer'
+
     use "EdenEast/nightfox.nvim"
 
     use 'nvim-lua/plenary.nvim'

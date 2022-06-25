@@ -34,6 +34,17 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, bufopts)
 end
 
+require("nvim-lsp-installer").setup({
+    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+    ui = {
+        icons = {
+            server_installed = "✓",
+            server_pending = "➜",
+            server_uninstalled = "✗"
+        }
+    }
+})
+
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'hls', 'clangd', 'ocamllsp' }
