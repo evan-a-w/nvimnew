@@ -6,6 +6,7 @@ vim.cmd([[
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
+  set hidden
 ]])
 
 vim.cmd("colorscheme terafox")
@@ -20,7 +21,7 @@ set.smarttab = true
 set.number = true
 set.cmdheight = 3
 
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 vim.cmd([[
     nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -56,6 +57,8 @@ vim.cmd([[
     vnoremap <leader>P "+P
 
     nnoremap <C-e> <cmd>lua vim.diagnostic.open_float()<CR>
+
+    nnoremap <leader>t :ToggleTerm size=40 dir=git_dir direction=float<CR>
 ]])
 
 
