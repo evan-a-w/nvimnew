@@ -32,7 +32,10 @@ return require('packer').startup(function()
 
     use 'vim-syntastic/syntastic'
 
-    use {'ZhiyuanLck/smart-pairs', event = 'InsertEnter', config = function() require('pairs'):setup() end}
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     use 'ms-jpq/coq-nvim'
 
