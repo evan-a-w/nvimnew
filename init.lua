@@ -94,3 +94,5 @@ vim.cmd([[
     nnoremap <leader>v :vsplit<CR>
     nnoremap <leader>h :split<CR>
 ]])
+
+require('completion')
