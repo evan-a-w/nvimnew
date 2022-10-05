@@ -10,12 +10,12 @@ cmp.setup {
 
         ["<C- >"] = cmp.mapping.complete(),
 
-        ["<s-c>"] = cmp.mapping.close(),
-        ["<s-y>"] = cmp.mapping.confirm {
+        ["<C-c>"] = cmp.mapping.close(),
+        ["<C-y>"] = cmp.mapping.confirm {
             behavior = cmp.ConfirmBehavior.Insert,
             select = true,
         },
-        ["<s-d>"] = function(fallback)
+        ["<C-d>"] = function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
             else
@@ -23,7 +23,7 @@ cmp.setup {
             end
         end,
 
-        ["<s-u>"] = function(fallback)
+        ["<C-u>"] = function(fallback)
             if cmp.visible() then
                 cmp.select_prev_item()
             else
