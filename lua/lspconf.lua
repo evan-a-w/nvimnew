@@ -47,7 +47,7 @@ require("nvim-lsp-installer").setup({
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'hls', 'clangd', 'ocamllsp' }
+local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'hls', 'clangd', 'ocamllsp', 'clojure_lsp' }
 for _, lsp in pairs(servers) do
   lspconf[lsp].setup(coq.lsp_ensure_capabilities({
     on_attach = on_attach,

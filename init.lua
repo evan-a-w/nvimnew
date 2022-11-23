@@ -9,7 +9,7 @@ vim.cmd([[
   set hidden
 ]])
 
-vim.cmd("colorscheme terafox")
+vim.cmd("colorscheme tokyonight-moon")
 
 local set = vim.opt -- set options
 set.tabstop = 4
