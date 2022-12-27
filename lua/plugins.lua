@@ -66,10 +66,13 @@ return require('packer').startup(function()
     use { 'mhartington/formatter.nvim' }
     use { 'williamboman/mason.nvim' }
 
+
+    use 'sbdchd/neoformat'
+
     -- Debugging
     use 'mfussenegger/nvim-dap'
 
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
-end}
+    end}
 end)

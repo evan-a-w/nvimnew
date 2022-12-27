@@ -74,16 +74,6 @@ vim.cmd([[
     autocmd FileType asm setlocal noexpandtab shiftwidth=8 tabstop=8 softtabstop=8
     autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
-    let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-    execute "set rtp+=" . g:opamshare . "/merlin/vim"
-
-    let g:syntastic_ocaml_checkers = ['merlin']
-
-    autocmd Filetype ocaml map K :MerlinTypeOf<CR>
-    autocmd Filetype ocaml map <g-d> :MerlinLocate<CR>
-    autocmd Filetype ocaml map <c-d> :MerlinDestruct<CR>
-    autocmd Filetype ocaml map <c-c> :MerlinConstruct<CR>
-
     let g:coq_settings = { 'auto_start': v:true }
 
     nnoremap <leader>h :wincmd h<CR>
