@@ -86,3 +86,4 @@ vim.cmd([[
 ]])
 
 require('completion')
+require('format')
