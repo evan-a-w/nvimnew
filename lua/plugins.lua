@@ -3,6 +3,8 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
 
+    use 'easymotion/vim-easymotion'
+
     use 'williamboman/nvim-lsp-installer'
 
     use "EdenEast/nightfox.nvim"
@@ -71,6 +73,19 @@ return require('packer').startup(function()
 
     -- Debugging
     use 'mfussenegger/nvim-dap'
+
+   use {
+      "folke/which-key.nvim",
+      config = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
+        require("which-key").setup {
+          -- your configuration comes here
+          -- or leave it empty to use the default settings
+          -- refer to the configuration section below
+        }
+      end
+    } 
 
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
